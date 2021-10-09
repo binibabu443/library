@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="pagedesginStyles.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="pagedesignAnimations.js"></script>
+    <title>Library Management</title>
+</head>
+<body>
+    <%- include('./partials/navbar')  %> 
+
+    <div class="jumbotron text-white " id="mainjumbo" >
+        <div class="container paddingcorrection mt-5">
+            <!-- <h1>Library</h1> -->
+            <div class="d-flex">
+                <span class=" display-1  font-weight-bold" id="mainHeading"> Library</div></span>
+                <!-- <span class="ml-auto d-none d-md-flex" id="strangebox"></span> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container articles">
+        <div class="row justify-content-center  ">
+            <div class="col-sm-2 col-8 pt-3 text-center" >
+                <img src="https://cdn.lifehack.org/wp-content/uploads/2015/05/31055903/1-The-Kite-Runner-Riverhead-Edition.jpg" alt="" class="rounded-circle imgsize " >
+            </div>
+            <div class="col-sm-10 col-10 pl-sm-3 blogtext" >
+                <h3 class="text-capitalize font-weight-bold"> The Kite Runner</h3>
+                <p class="sourcesite">Khaled Hosseini</p>
+                <span>13 hours ago &nbsp;&nbsp;<i class="fa fa-circle " aria-hidden="true"></i> <span> Read More</span>
+            </div>
+            
+
+        </div>
+        <hr/>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-sm-2 col-8 pt-3 text-center" >
+                <img src="https://cdn.lifehack.org/wp-content/uploads/2015/05/31055926/15-Number-the-Stars-HMH-Books-for-Young-Readers-25th-Anniversary-Edition.jpg" alt="" class="rounded-circle imgsize" >
+            </div>
+            <div class="col-sm-10 col-10 pl-sm-3 blogtext" >
+                <h3 class="text-capitalize font-weight-bold">Number the Stars</h3>
+                <p class="sourcesite">Lois Lowry</p>
+                <span>2 days ago &nbsp;&nbsp;<i class="fa fa-circle " aria-hidden="true"></i> <span> Read More</span>
+            </div>
+            
+        </div>
+        <hr/>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-sm-2 col-8 pt-3 text-center" >
+                <img src="https://cdn.lifehack.org/wp-content/uploads/2015/05/31055941/8-Pride-and-Prejudice-Penguin-Classics-Deluxe-Edition.jpg" alt="" class="rounded-circle imgsize" >
+            </div>
+            <div class="col-sm-10 col-10 pl-sm-3 blogtext" >
+                <h3 class="text-capitalize font-weight-bold">Pride and Prejudice</h3>
+                <p class="sourcesite">Jane Austen</p>
+                <span>8 days ago &nbsp;&nbsp;<i class="fa fa-circle " aria-hidden="true"></i> <span> Read More</span>
+            </div>
+            
+        </div>
+        <hr/>
+        <div class="row justify-content-end">
+            <button class="btn btn-primary mr-4"> Show More</button>
+        </div>
+    </div>
+
+    
+    <%- include('./partials/footer')  %> 
+
+    
+
+    <script>
+        
+    </script>
+</body>
+</html>
